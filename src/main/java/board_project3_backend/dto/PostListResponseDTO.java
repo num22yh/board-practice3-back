@@ -1,12 +1,15 @@
 package board_project3_backend.dto;
 
-import lombok.Data;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.sql.Timestamp;
 
-@Data
-public class PostResponseDTO {
-    private int id;
+@Getter @Setter
+@Builder
+public class PostListResponseDTO {
+    private long id;
     private String author;
     private String title;
     private String content;
